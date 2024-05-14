@@ -1,0 +1,175 @@
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header{
+	width: 0%;
+}
+.barra-navegacion {
+    /* Estilos para la barra de navegación */
+    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con opacidad */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra difuminada en la parte inferior */
+}
+
+.navegacion{
+	width: auto;
+	margin: auto;
+	background: rgb(2,13,31);
+ 
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+    /*distancia hacia abajo --- distancia entre nombres*/
+	padding: 15px 35px;
+	color: #ffffffc9;
+	font-family: 'Open sans';
+	text-decoration: none;
+    font-size: 110%;
+}
+
+.menu li a:hover{
+	color: #ffffff;
+	transition: all .0s;
+}
+
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 220%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s;
+
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: '';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+#index:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+#opportunityboton:hover {-webkit-transform:scale(1.1);transform:scale(1.1);filter: brightness(1.5);
+}; 
+
+
+#inciarsession:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#Tendencias:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+#Contactenos:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#dashBoard:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+#iniciosesion:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#registrarse:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#iniciarSesion:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#tendencias:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+#iniciarSesion:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+}
+/*contenedor inicio de sesion*/
+.container {
+    width: 550px;
+    height: 600px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(2, 13, 31);
+    border-radius: 10px;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Open sans';
+    z-index: -5;
+}
+/*contenedor registro*/
+.container2 {
+    width: 1200px;
+    height: 600px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(2, 13, 31);
+    border-radius: 10px;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Open sans';
+}
+.container3 {
+    width: 550px;
+    height: 300px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: hidden;
+    background-color: rgb(2, 13, 31);
+    border-radius: 10px;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Open sans';
+}
+
+
+/*boton*/
+.button {
+    padding: 10px 20px; /* Ancho --- largo */
+    background-color: #0889f1; 
+    color: #fff; 
+    border-radius: 10px; 
+    cursor: pointer; /*cambia el cursor al pasar sobre el boton*/
+    transition: background-color 0.3s; /*transicion para el color del boton */
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    left: 50%;
+    bottom: -30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    transform: translate(-200%);
+}
+
+.button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+}
+

@@ -1,0 +1,10 @@
+.informacionTendencias p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+   
+}
+.two-columns {
+    column-count: 2;
+    column-gap: 20px; /* Espacio entre columnas (puedes ajustarlo según tu preferencia) */
+}

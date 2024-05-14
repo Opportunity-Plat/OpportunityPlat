@@ -1,0 +1,12 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    
+    flex-direction: column;
+
+    *{
+        font-family: 'lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'PT Sans', sans-serif;
+    }
+}

@@ -1,0 +1,181 @@
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gradient-layer {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 20%; /* Ajusta la altura según sea necesario */
+    z-index: 2; /* Coloca la capa encima del video */
+    background: linear-gradient(to bottom, transparent, rgb(2, 13, 31), transparent);
+}
+
+#mainIndex{
+    min-height: 100vh;
+    position: relative;
+}
+
+.indexHome{
+    position: relative;
+    z-index: 2;
+}
+.indexHome h1{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin-top: 10%;
+}
+.indexHome h2{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+.utilidades{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 80%;
+    z-index: 1;
+    background-image: url(Recurses/Fondo.jpg); background-repeat: no-repeat;  background-size: 100%;
+}
+.utilidades h1{
+    color: white;
+    margin-left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    margin-top: 20%;
+}
+.utilidades img{
+    width: 20%;
+    margin-top: -10%;
+    margin-left: 15%;
+    border-radius: 15px;
+}
+
+
+/*TARJETAS */
+.tarjetas > div:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7); /* Sombra blanca al pasar el cursor */
+}
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 170%;
+    height: 400px; /* Altura de los contenedores */
+   
+    z-index: 1;
+}
+
+.tarjetas > div {
+    width: calc(15% - 35px); /* Ancho de los contenedores restando el espacio entre ellos */
+    height: 100px; /* Altura de los contenedores */
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 70px; /* Establece la distancia deseada entre los contenedores */
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tarjetas > div img {
+    margin-left: 65px;
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+}
+.tarjetas > div h3 {
+    margin: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px; /* Ajusta el tamaño del título */
+}
+/* Para el último elemento */
+.tarjetas > div:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último contenedor */
+}
+.tarjetas h1{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin-top: 10%;
+}
+
+#dashBoardJefe{
+ margin-left: -20px;
+   position: relative;
+   border-radius: 10px;
+    width: 20%;
+    height: 120px;
+    top: 80px;
+    z-index: 1;
+    border: 2px solid white;
+}
+#dashBoardEgresado{
+    border-radius: 10px;
+   position: relative;
+    width: 20%;
+    height: 120px;
+    top: 80px;
+    z-index: 1;
+    border: 2px solid white;
+
+}
+#tendencias{
+    
+    border-radius: 10px;
+   position: relative;
+    width: 20%;
+    height: 120px;
+    top: 80px;
+    z-index: 1;
+    border: 2px solid white;
+
+}
+.tarjetas > div {
+    position: relative;
+    /* ...otros estilos... */
+}
+
+.tarjetas > div p {
+    position: absolute;
+    bottom: -20px; /* Ajusta la distancia del texto respecto al contenedor */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+#tendencias:hover {-webkit-transform:scale(1.1);transform:scale(1.1)}
+#dashBoardJefe:hover {-webkit-transform:scale(1.1);transform:scale(1.1)}
+#dashBoardEgresado:hover {-webkit-transform:scale(1.1);transform:scale(1.1)}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linkeado con hojas de estilos-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="info.css">
+    <!--titulo de pestaña-->
+    <title>Home-OP</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: rgb(2, 13, 31)">
+    <div id="header-placeholder"></div>
+    <!--uso de javascript para cargar la barra de navegacion-->
+    <script>
+        // Carga el encabezado desde header.html en #header-placeholder
+        fetch("comun.php")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        
+    </script>
+<div class="informacionTendencias"><br><br>
+<h1 style="text-align: center; color: #ffffff;">SOBRE NOSOTROS</h1><br><br><br>
+
+<div class="container4"  style="width: 1000px; height: 2000px; background-color: rgb(2, 13, 31); border-radius: 15px; margin-top: 40px; margin: auto;">
+    <h2 style="text-align: center; color: #ffffff;">Visioning</h2><br><br><br>
+    <p>
+    Nuestra motivación para crear este producto radica en abordar la necesidad crítica de los directores de programas académicos
+     en las universidades de evaluar y mejorar la empleabilidad y el éxito laboral de sus egresados. Reconocemos que el mundo 
+     laboral está en constante evolución y que las instituciones educativas deben adaptarse para asegurarse de que sus programas
+      académicos estén alineados con las demandas cambiantes del mercado laboral. Queremos proporcionar a los directores de programas 
+      una herramienta poderosa que les permita tomar decisiones informadas y basadas en datos para diseñar currículos pertinentes y 
+      estratégicos.
+El cambio positivo que nuestro producto debería provocar es transformar la forma en que las universidades evalúan la pertinencia 
+de sus programas académicos. Al ofrecer una solución integral y tecnológica, aspiramos a lograr los siguientes resultados:
+Mejora de la empleabilidad: Nuestra plataforma permitirá a los directores de programas identificar tendencias en la empleabilidad
+ de los egresados, lo que a su vez les permitirá adaptar los planes de estudio para garantizar que los graduados estén equipados 
+ con las habilidades adecuadas para ingresar al mercado laboral con éxito.<br>
+Alineación con el mercado laboral: Facilitaremos a los directores la capacidad de comparar las habilidades enseñadas en los programas
+ con las habilidades requeridas por el mercado laboral. Esto garantizará que los currículos se mantengan actualizados y relevantes,
+  lo que beneficiará tanto a los estudiantes como a las empresas.<br>
+Predicción y anticipación: Nuestra plataforma utilizará análisis predictivos para identificar las futuras tendencias y habilidades
+ emergentes demandadas por el mercado. Esto permitirá a las universidades adelantarse a las necesidades cambiantes y preparar a los
+  estudiantes de manera proactiva para las oportunidades futuras.<br>
+En última instancia, esperamos que nuestro producto contribuya a la mejora continua de la calidad educativa, la inserción laboral 
+exitosa de los egresados y el fortalecimiento de la reputación de las universidades al demostrar su compromiso con la relevancia y 
+la excelencia académica.
+   </p><br><br><br>
+   <h2 style="text-align: center; color: #ffffff;">Publico objetivo</h2><br><br><br>
+   <p>
+    Los clientes y usuarios objetivo de nuestro producto son los directores de programas académicos en universidades
+     y otras instituciones educativas. Estos profesionales desempeñan un papel crucial en la toma de decisiones sobre 
+     los planes de estudio y la dirección de los programas académicos ofrecidos. Están interesados en garantizar que los 
+     programas que supervisan sean relevantes, estén actualizados y equipen a los estudiantes con las habilidades necesarias
+      para tener éxito en el mercado laboral.
+    Además de los directores de programas, nuestro producto también se dirige a otros actores clave, como:<br><br>
+    Profesores y educadores: Nuestra plataforma puede proporcionar información valiosa a los profesores para que puedan 
+    adaptar sus métodos de enseñanza y contenido para asegurarse de que estén enseñando las habilidades y temas más relevantes
+     para el éxito laboral de los estudiantes.
+    Estudiantes y futuros estudiantes: Aunque no son directamente los usuarios de la plataforma, los estudiantes se beneficiarán
+     enormemente de los programas académicos mejorados que resultan de la información proporcionada por nuestro producto. Los 
+     futuros estudiantes también pueden usar la información sobre empleabilidad y tendencias laborales para tomar decisiones
+      informadas sobre su educación.<br>
+    Empresas y empleadores: A medida que los programas académicos se alinean mejor con las necesidades del mercado laboral, 
+    las empresas se beneficiarán al tener un acceso más directo a graduados con las habilidades y competencias que necesitan.
+     Esto puede fortalecer la colaboración entre las universidades y las empresas y facilitar la colocación de graduados en
+      roles relevantes.<br>
+    En última instancia, nuestro producto busca beneficiar a toda la comunidad educativa, desde directores de programas y 
+    profesores hasta estudiantes y empleadores, al mejorar la calidad y relevancia de la educación superior y promover una 
+    transición más fluida y exitosa al mundo laboral.
+  </p><br><br><br>
+  <h2 style="text-align: center; color: #ffffff;">¿Qué problema resuelve el producto?</h2><br><br><br>
+   <p>
+    Nuestro producto aborda una serie de desafíos críticos que enfrentan los directores de programas académicos en
+     universidades y otras instituciones educativas. Resuelve problemáticas clave y proporciona beneficios significativos 
+     para toda la comunidad educativa y el mercado laboral en general.<br>
+Evaluación de la empleabilidad: El producto resuelve la dificultad de los directores de programas para evaluar de manera
+efectiva la empleabilidad de sus egresados. Les proporciona una herramienta integral que recopila y analiza datos relevantes 
+para medir el éxito laboral de los graduados, lo que les permite tomar decisiones informadas sobre la calidad y pertinencia
+ de sus programas académicos.<br>
+Alineación con el mercado laboral: El producto aborda el desafío de mantener actualizados los planes de estudio y garantizar 
+que las habilidades enseñadas sean relevantes para las demandas cambiantes del mercado laboral. Permite a los directores comparar 
+las habilidades impartidas con las habilidades demandadas, facilitando la adaptación continua de los currículos.<br>
+Predicción de habilidades futuras: Nuestro producto resuelve la incertidumbre sobre las habilidades futuras que demandará el 
+mercado laboral. Utiliza análisis predictivos para anticipar tendencias emergentes, lo que permite a las universidades preparar
+ a los estudiantes de manera proactiva para las oportunidades laborales del futuro.<br>
+</p><br><br><br>
+<h2 style="text-align: center; color: #ffffff;">¿Qué beneficio proporciona?</h2><br><br><br>
+<p>
+Mejora de la calidad educativa: Nuestro producto eleva la calidad de la educación superior al garantizar que los programas académicos 
+estén alineados con las necesidades reales del mercado laboral. <br>
+Incremento de la empleabilidad: Al proporcionar a los directores de programas una visión detallada de la empleabilidad 
+de los egresados y las habilidades más demandadas, el producto ayuda a aumentar las oportunidades laborales para los graduados,
+ mejorando su inserción en el mercado laboral.<br>
+Adaptación ágil: Los directores de programas pueden tomar decisiones informadas y oportunas para adaptar los currículos, lo que 
+permite a las universidades mantenerse al día con las tendencias laborales cambiantes y brindar una educación más relevante y 
+actualizada.<br>
+Colaboración con empresas: La alineación con las demandas del mercado laboral fortalece la colaboración entre las instituciones
+ educativas y las empresas, facilitando la creación de programas de pasantías y prácticas más efectivos, y aumentando las
+ oportunidades de colocación para los graduados.
+  </p>
+</div>
+</div>
+
+    
+</body>
+</html>

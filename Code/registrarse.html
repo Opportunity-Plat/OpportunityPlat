@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Registrarse</title>
+    <!-- Estilos CSS, si los tienes -->
+</head>
+<body style="background-image: url(Recurses/Fondo.jpg); background-repeat: no-repeat;  background-size: 100%;">
+
+    <div id="header-placeholder"></div>
+    <!--uso de javascript para cargar la barra de navegacion-->
+    <script>
+        // Carga el encabezado desde header.html en #header-placeholder
+        fetch("comun.php")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+
+<div class="container2">
+    <h2 style="font-size: 45px; margin-top: 60px; text-align: center; margin-left: 340px;">Registrarse</h2>
+    <form action="registrarse.php" method="POST">
+        <img src="Recurses/opportunityRE.jpeg" style="position: relative; width: 30%; margin-left: 50px; margin-top: 70px;">
+        <div style="text-align: center; margin-top: -210px;">
+           
+            <input type="text" id="nombres" name="nombres" required placeholder="Nombre/s*" style="margin-top: 20px; width: 25%; border-radius: 10px; 
+            padding: 15px; margin-bottom: 10px; margin-left: 350px;">
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos*" style="width: 25%; border-radius: 
+            10px; padding: 15px; margin-bottom: 10px;"><br>
+            <input type="text" id="universidad" name="universidad"  placeholder="Universidad de la cual es Egresado" 
+            style="width: 40%; border-radius: 10px; padding: 15px; margin-bottom: 10px; margin-left: 350px;">
+            <input type="number" id="añoE" name="añoE" placeholder="Año Egresado" style="width: 10%; 
+            border-radius: 10px; padding: 15px; margin-bottom: 10px;"><br>
+            <input type="text" id="usuario" name="user" required placeholder="Usuario*" style="width: 25%; border-radius: 10px;
+             padding: 15px; margin-bottom: 10px;margin-left: 350px; ">
+            <input type="password" id="contraseña" name="pass" required placeholder="contraseña*" style="width: 25%;
+             border-radius: 10px; padding: 15px; margin-bottom: 10px;"><br>
+            <input type="text" id="carrera" name="carrera"  placeholder="Carrera" style="width: 20%; border-radius: 10px;
+            padding: 15px; margin-bottom: 60px;margin-left: 350px; "><br>
+            
+            
+            <label for="tipo" style="font-size: 19.5px; margin-left: 300px;">Tipo de usuario:</label>
+            <select id="tipo" name="type" required style="width: 25%; border-radius: 10px; padding: 10px;">
+                <option value="Egresado">Egresado</option>
+                <option value="Jefe">Jefe de carrera</option>
+            </select><br>
+       
+            
+            
+            <input type="submit" value="Registrarse" class="button" style="left: 390px; background-color: #467fbd;">
+        </div>            
+    </form>
+</div>
+
+</body>
+</html>
