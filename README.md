@@ -22,7 +22,7 @@ This will install all the dependencies listed in the requirements.txt file in yo
 
 To run the server, use:
 
-    flask --app /home/srm/Uni/IngSis/IMH/flaskr/app.py --debug run
+    flask --app /OpportunityPlat/Code/flaskr/app.py --debug run
 
 # Note
 The project was primarily developed on Linux. The instruction in step 2 is specific; check how to activate the environment on your operating system. Verify the versions in case it does not work with the requirements.txt.
