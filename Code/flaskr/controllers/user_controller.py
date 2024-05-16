@@ -24,5 +24,3 @@ def sobrenosotros():
     return render_template('sobreNosotros.html')
 def logout():
     return render_template('logOut.php')
-def sobrenosotros():
-    return render_template('sobreNosotros.html')
