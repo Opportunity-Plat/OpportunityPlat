@@ -12,4 +12,5 @@ def register_response():
     return render_template('register_response.html')
 def forgot_password():
     return render_template('forgot_password.html')
-
+def tendencias():
+    return render_template('tendencias.html')
