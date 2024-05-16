@@ -56,3 +56,11 @@ def profile_route():
 @web_bp.route("/comun", endpoint="comun")
 def profile_route():
     return user.comun()
+
+@web_bp.route("/sobrenosotros", endpoint="dashboard")
+def profile_route():
+    return user.sobrenosotros()
+
+@web_bp.route("/logout", endpoint="comun")
+def profile_route():
+    return user.logout()
