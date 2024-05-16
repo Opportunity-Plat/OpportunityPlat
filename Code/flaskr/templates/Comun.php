@@ -12,6 +12,5 @@
             
 	</ul>
     </nav>
-    <br>
 </div>
 <!-- fin barra de menu personalizada -->
