@@ -49,20 +49,4 @@ if(isset($_SESSION['user'])) {
     </div>
 </body>
 </html>
-<?php /*
-        } else {
-            echo '<script type="text/javascript">';
-            echo 'alert("Acceso denegado. Tipo de usuario inválido.");';
-            echo 'window.location.href = "index.html";'; // Redirigir a la página de inicio de sesión
-            echo '</script>';
-            exit();
-        }
-    } else {
-        // Manejar errores de consulta si es necesario
-        echo "Error en la consulta";
-    }
-} else {
-    header("Location: inicioDeSesion.php");
-    exit();
-} */
-?>
+
