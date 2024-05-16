@@ -18,7 +18,7 @@
     <!--uso de javascript para cargar la barra de navegacion-->
     <script>
         // Carga el encabezado desde header.html en #header-placeholder
-        fetch("../utils/Comun.php")
+        fetch("{{url_for('web.dashboard')}}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
