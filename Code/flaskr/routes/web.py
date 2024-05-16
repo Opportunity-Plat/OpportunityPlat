@@ -57,7 +57,7 @@ def profile_route():
 def profile_route():
     return user.comun()
 
-@web_bp.route("/sobrenosotros", endpoint="dashboard")
+@web_bp.route("/sobrenosotros", endpoint="sobrenosotros")
 def profile_route():
     return user.sobrenosotros()
 
