@@ -61,6 +61,6 @@ def profile_route():
 def profile_route():
     return user.sobrenosotros()
 
-@web_bp.route("/logout", endpoint="comun")
+@web_bp.route("/logout", endpoint="logout")
 def profile_route():
     return user.logout()
