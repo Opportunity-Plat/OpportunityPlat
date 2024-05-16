@@ -52,3 +52,7 @@ def profile_route():
 @web_bp.route("/dashboard", endpoint="dashboard")
 def profile_route():
     return user.dashboard()
+
+@web_bp.route("/comun", endpoint="comun")
+def profile_route():
+    return user.comun()

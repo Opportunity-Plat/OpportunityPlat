@@ -18,3 +18,5 @@ def egresados():
     return render_template('egresado.php')
 def dashboard():
     return render_template('dashBoard.php')
+def comun():
+    return render_template('Comun.php')
