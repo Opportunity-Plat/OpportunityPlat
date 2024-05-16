@@ -1,40 +1,4 @@
-<!--<?php
-/*session_start();
-include("{{ url_for('web.conexion')}}");
 
-index = "{{ url_for('web.index')}}"
-
-if(isset($_SESSION['user'])) {
-    $user = $_SESSION['user'];
-
-    // Realiza una consulta para obtener el tipo de usuario
-    $query = "SELECT Type FROM usuarios WHERE User='$user'";
-    $result = mysqli_query($conexion, $query);
-
-    if($result) {
-        $row = mysqli_fetch_assoc($result);
-        $user_type = $row['Type'];
-
-        // Verificar si el usuario es 'Jefe de Carrera'
-        if($user_type !== 'Jefe') {
-            // Mostrar un mensaje de error utilizando JavaScript
-            echo '<script type="text/javascript">';
-            echo 'alert("Acceso denegado. Tipo de usuario inválido.");';
-            echo 'window.location.href = index;'; // Redirigir a la página de inicio de sesión
-            echo '</script>';
-            exit();
-        }
-    } else {
-        // Manejar errores de consulta si es necesario
-        echo "Error en la consulta";
-        exit();
-    }
-} else {
-    header("Location: {{url_for('web.login')}}");
-    exit();
-}
- */
-?> --!>
 <!DOCTYPE html>
 <html lang="en">
 <head>
