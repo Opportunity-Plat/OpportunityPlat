@@ -15,6 +15,6 @@ def forgot_password():
 def tendencias():
     return render_template('tendencias.html')
 def egresados():
-    return render_template('../utils/egresado.php')
+    return render_template('egresado.php')
 def dashboard():
-    return render_template('../utils/dashBoard.php')
+    return render_template('dashBoard.php')
