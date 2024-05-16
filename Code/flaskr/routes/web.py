@@ -64,3 +64,7 @@ def profile_route():
 @web_bp.route("/logout", endpoint="logout")
 def profile_route():
     return user.logout()
+
+@web_bp.route("/conexion", endpoint="conexion")
+def profile_route():
+    return user.conexion()
