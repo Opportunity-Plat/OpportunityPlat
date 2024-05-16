@@ -1,6 +1,6 @@
-<?php
-session_start();
-include("conexion.php");
+<!--<?php
+/*session_start();
+include("{{ url_for('web.conexion')}}");
 
 index = "{{ url_for('web.index')}}"
 
@@ -33,7 +33,8 @@ if(isset($_SESSION['user'])) {
     header("Location: {{url_for('web.login')}}");
     exit();
 }
-?>
+ */
+?> --!>
 <!DOCTYPE html>
 <html lang="en">
 <head>

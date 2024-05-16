@@ -14,7 +14,7 @@
             session_start();
             if (isset($_SESSION['user'])) {
                 $user = $_SESSION['user'];
-                echo "<li id='dashBoard'><a href='{{url_for('web.dashboard')}}'>Dashboard</a></li>";
+                #echo "<li id='dashBoard'><a href='{{url_for('web.dashboard')}}'>Dashboard</a></li>";
                 echo "<li id='logout' style='float: right;margin-right: 5% ;  margin-top: 1.5%;' ><a href='{{url_for('web.logout')}}'>Cerrar sesión</a></li>";
                 echo "<li id='usuario' style='float: right;margin-top: 1.5%;'><a href=''>$user</a></li>";
                 
