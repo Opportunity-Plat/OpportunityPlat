@@ -58,11 +58,11 @@ video{
 }
 
 .utilidades{
-    position: absolute;
+    position: absolute; 
     width: 100%;
     height: 80%;
     z-index: 1;
-    background-image: url(Recurses/Fondo.jpg); background-repeat: no-repeat;  background-size: 100%;
+    background-image: url(../img/Fondo.jpg); background-repeat: no-repeat;  background-size: 100%;
 }
 .utilidades h1{
     color: white;
