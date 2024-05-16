@@ -1,4 +1,4 @@
-<?php
+<?php /*
 session_start();
 include("conexion.php");
 
@@ -13,7 +13,7 @@ if(isset($_SESSION['user'])) {
         $row = mysqli_fetch_assoc($result);
         // Verificar si el usuario es 'Egresado'
         if($row['Type'] === 'Egresado') {
-            // Mostrar los datos del usuario 'Egresado'
+	    // Mostrar los datos del usuario 'Egresado' */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@ if(isset($_SESSION['user'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Linkeado con hojas de estilos-->
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/assets/css/style.css">
     <!--titulo de pestaña-->
     <title>Egresado</title>
     <!-- Añade tus scripts y estilos aquí -->
@@ -31,7 +31,7 @@ if(isset($_SESSION['user'])) {
     <!--uso de javascript para cargar la barra de navegacion-->
     <script>
         // Carga el encabezado desde header.html en #header-placeholder
-        fetch("comun.php")
+        fetch("{{ url_for('web.comun') }}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -49,7 +49,7 @@ if(isset($_SESSION['user'])) {
     </div>
 </body>
 </html>
-<?php
+<?php /*
         } else {
             echo '<script type="text/javascript">';
             echo 'alert("Acceso denegado. Tipo de usuario inválido.");';
@@ -64,5 +64,5 @@ if(isset($_SESSION['user'])) {
 } else {
     header("Location: inicioDeSesion.php");
     exit();
-}
+} */
 ?>
