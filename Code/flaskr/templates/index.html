@@ -16,7 +16,7 @@
     <main id ="mainIndex">
     <div id="header-placeholder" style="position: relative; z-index: 2;"></div>
     <!--uso de javascript para cargar la barra de navegacion-->
-    <script>
+    <!--<script>
         // Carga el encabezado desde header.html en #header-placeholder
         fetch("{{url_for('web.dashboard')}}")
             .then(response => response.text())
@@ -24,7 +24,7 @@
                 document.getElementById('header-placeholder').innerHTML = data;
             });
         
-    </script>
+    </script> --!>
 <div class="video-conteiner">
     <video autoplay muted loop id="myVideo">
         <source src="../static/assets/videos/pattern_-_121797 (1080p).mp4" type="video/mp4">
