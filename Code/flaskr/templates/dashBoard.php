@@ -18,7 +18,7 @@ if(isset($_SESSION['user'])) {
             // Mostrar un mensaje de error utilizando JavaScript
             echo '<script type="text/javascript">';
             echo 'alert("Acceso denegado. Tipo de usuario inválido.");';
-            echo 'window.location.href = "{{ url_for(''web.index'') }}";'; // Redirigir a la página de inicio de sesión
+            echo 'window.location.href = "{{ url_for(web.index)}}";'; // Redirigir a la página de inicio de sesión
             echo '</script>';
             exit();
         }
