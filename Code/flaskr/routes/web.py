@@ -44,3 +44,11 @@ def profile_route():
 @web_bp.route("/tendencias", endpoint="tendencias")
 def profile_route():
     return user.tendencias()
+
+@web_bp.route("/egresados", endpoint="egresados")
+def profile_route():
+    return user.egresados()
+
+@web_bp.route("/dashboard", endpoint="dashboard")
+def profile_route():
+    return user.dashboard()
